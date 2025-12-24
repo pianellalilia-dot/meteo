@@ -9,12 +9,13 @@
   <body>
     <div class="container">
       <header>
-        <form action="">
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +29,7 @@
 
       <main>
         <div>
-          <h1 class="current-city">Paris</h1>
+          <h1 class="current-city" id="current-city">Paris</h1>
           <p class="current-details">
             Tuesday 10:46, broken clouds<br />Humidity: <strong>73%</strong>,
             Wind: <strong>10.29 Km/h </strong>
@@ -60,5 +61,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

@@ -85,20 +85,25 @@ main .current-temperature-unit {
 main .forecast {
   display: flex;
   justify-content: center;
-  padding: 20px;
 }
 main .forecast-day {
   text-align: center;
 }
 main .forecast-image img {
-  width: 88px;
-  height: 88px;
+  width: 80px;
+  height: 80px;
   display: block;
   margin: 0 auto;
 }
 main .forecast-temperatures {
   display: flex;
   justify-content: space-around;
+  color: #338b93;
+}
+main .weather-forecast {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
 }
 footer {
   border-top: 1px solid rgb(249, 247, 254);

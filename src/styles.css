@@ -25,13 +25,13 @@ header {
 }
 header .search-form-button,
 .search-form-input {
+  margin-top: 5px;
   border: none;
   padding: 15px 20px;
   border-radius: 8px;
   font-size: 16px;
 }
 header .search-form-button {
-  margin-left: 5px;
   background: #def7f2;
   color: #338b93;
   font-weight: bold;
@@ -43,6 +43,7 @@ header .search-form-button:hover {
   cursor: pointer;
 }
 header .search-form-input {
+  margin-right: 5px;
   width: 82%;
   background: #def7f2;
 }
@@ -64,20 +65,22 @@ main .current-details {
   font-weight: 500;
   line-height: 24px;
 }
-main .current-temperature-emoji {
-  position: relative;
-  bottom: 10px;
+main .current-temperature {
+  display: flex;
+}
+main .current-temperature img {
+  width: 88px;
+  height: 88px;
 }
 main .current-temperature-number {
   font-size: 88px;
+  line-height: 88px;
   font-weight: 700;
-  position: relative;
-  bottom: 28px;
 }
 main .current-temperature-unit {
   font-size: 28px;
   position: relative;
-  bottom: 67px;
+  top: 7px;
 }
 footer {
   border-top: 1px solid rgb(249, 247, 254);

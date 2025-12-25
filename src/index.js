@@ -53,6 +53,30 @@ function handleSearchSubmit(event) {
   searchCity(inputElement.value);
 }
 
+function weatherForecast() {
+  let weatherForecastELement = document.querySelector("#weather-forecast");
+  weatherForecastELement.innerHTML = `
+  <div class="forecast">
+    <div>
+      <div class="forecast-day">Tue</div>
+      <div class="forecast-image">
+        <img
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+          alt=""
+        />
+      </div>
+      <div class="forecast-temperatures">
+        <div class="forecast-temperature">
+          <strong>2°</strong>
+        </div>
+        <div class="forecast-temperature">0°</div>
+      </div>
+    </div>
+  </div>;
+`;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Copenhagen");
+weatherForecast();

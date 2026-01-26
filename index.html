@@ -25,6 +25,9 @@
             href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
           />
+          <div class="current-date">
+            Last updated: <span id="current-date"></span>
+          </div>
         </form>
       </header>
 
@@ -33,10 +36,11 @@
           <div>
             <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
-              <span id="current-date"></span>,
-              <span id="descripton-weather"></span><br />Humidity:
+              Humidity:
               <strong><span id="humidity"></span>%</strong> , Wind:
               <strong><span id="wind"></span> Km/h </strong>
+              <br />
+              <span id="descripton-weather"></span>
             </p>
           </div>
           <div class="current-temperature">
@@ -44,7 +48,6 @@
               <img
                 src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
                 alt=""
-                class="current-temperature-emoji"
               />
             </div>
             <div
